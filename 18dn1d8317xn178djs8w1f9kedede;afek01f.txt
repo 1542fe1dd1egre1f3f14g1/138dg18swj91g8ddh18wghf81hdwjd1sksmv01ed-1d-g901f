@@ -1,0 +1,331 @@
+-- Objects
+
+local TutorialGUI = Instance.new("ScreenGui")
+local TutorialFrame = Instance.new("Frame")
+local SecondTutorialFrame = Instance.new("Frame")
+local PlayerName = Instance.new("TextLabel")
+local Credits = Instance.new("ImageLabel")
+local Kill = Instance.new("TextButton")
+local TutorialScrollingFrame = Instance.new("ScrollingFrame")
+local Forcefield = Instance.new("TextButton")
+local God = Instance.new("TextButton")
+local ww = Instance.new("TextButton")
+local ee = Instance.new("TextButton")
+local we = Instance.new("TextButton")
+local ss = Instance.new("TextButton")
+local wew = Instance.new("TextButton")
+local wrw = Instance.new("TextButton")
+local wheat = Instance.new("ImageLabel")
+local Wi = Instance.new("TextButton")
+-- Properties
+TutorialGUI.Name = "TutorialGUI"
+TutorialGUI.Parent = game.CoreGui
+
+TutorialFrame.Name = "TutorialFrame"
+TutorialFrame.Parent = TutorialGUI
+TutorialFrame.Active = true
+TutorialFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+TutorialFrame.BackgroundTransparency = 0.3
+TutorialFrame.Position = UDim2.new(0.733261347, 0, 0.332283467, 0)
+TutorialFrame.Size = UDim2.new(0, 228, 0, 145)
+TutorialFrame.Draggable = true
+
+SecondTutorialFrame.Name = "SecondTutorialFrame"
+SecondTutorialFrame.Parent = TutorialFrame
+SecondTutorialFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+SecondTutorialFrame.BackgroundTransparency = 0.2
+SecondTutorialFrame.Position = UDim2.new(0.0350877196, 0, 0.0655172393, 0)
+SecondTutorialFrame.Size = UDim2.new(0, 88, 0, 126)
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = SecondTutorialFrame
+PlayerName.BackgroundColor3 = Color3.new(75, 75, 0)
+PlayerName.BackgroundTransparency = 1
+PlayerName.Position = UDim2.new(0.125, 0, 0.753968298, 0)
+PlayerName.Size = UDim2.new(0, 66, 0, 18)
+PlayerName.Font = Enum.Font.SourceSans
+PlayerName.Text = "Wheatage"
+PlayerName.TextColor3 = Color3.new(75, 75, 0)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 14
+PlayerName.TextWrapped = true
+
+Credits.Name = "Wheatage"
+Credits.Parent = SecondTutorialFrame
+Credits.BackgroundColor3 = Color3.new(75, 75, 0)
+Credits.BackgroundTransparency = 1
+Credits.Position = UDim2.new(0.18, 0, 0.301587313, 0)
+Credits.Size = UDim2.new(0, 56, 0, 50)
+Credits.Image = "http://www.roblox.com/asset/?id=5138151946"
+
+Kill.Name = "Cat"
+Kill.Parent = SecondTutorialFrame
+Kill.BackgroundColor3 = Color3.new(75, 75, 0)
+Kill.Position = UDim2.new(0.125, 0, 0.0833333358, 0)
+Kill.Size = UDim2.new(0, 66, 0, 18)
+Kill.Font = Enum.Font.SourceSans
+Kill.Text = "LootRoom"
+Kill.TextColor3 = Color3.new(0, 0, 0)
+Kill.TextScaled = true
+Kill.TextSize = 14
+Kill.TextWrapped = true
+Kill.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Objects.Map.Teleporter.CFrame
+end)
+
+TutorialScrollingFrame.Name = "TutorialScrollingFrame"
+TutorialScrollingFrame.Parent = TutorialFrame
+TutorialScrollingFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+TutorialScrollingFrame.BackgroundTransparency = 0.2
+TutorialScrollingFrame.Position = UDim2.new(0.504385948, 0, 0.068965517, 0)
+TutorialScrollingFrame.Size = UDim2.new(0, 101, 0, 126)
+
+Forcefield.Name = "Flower"
+Forcefield.Parent = TutorialScrollingFrame
+Forcefield.BackgroundColor3 = Color3.new(75, 75, 0)
+Forcefield.Size = UDim2.new(0, 66, 0, 19)
+Forcefield.Font = Enum.Font.SourceSans
+Forcefield.Text = "AutoPickup"
+Forcefield.TextColor3 = Color3.new(0, 0, 0)
+Forcefield.TextScaled = true
+Forcefield.TextSize = 14
+Forcefield.TextWrapped = true
+Forcefield.MouseButton1Click:connect(function()
+ local plr = game.Players.LocalPlayer
+local Click = clickdetector or fireclickdetector
+while wait(0.5) do
+for _,object in next, game.Workspace.Objects.Spawned:GetDescendants() do
+    if object:IsA("ClickDetector") then
+         Click(object, 1)
+    end
+end
+end
+end)
+
+God.Name = "Cata"
+God.Parent = TutorialScrollingFrame
+God.BackgroundColor3 = Color3.new(75, 75, 0)
+God.Position = UDim2.new(0, 0, 0.0793650821, 0)
+God.Size = UDim2.new(0, 66, 0, 19)
+God.Font = Enum.Font.SourceSans
+God.Text = "Speed"
+God.TextColor3 = Color3.new(0, 0, 0)
+God.TextScaled = true
+God.TextSize = 14
+God.TextWrapped = true
+God.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.Speed.Value = 5
+end)
+
+
+
+ww.Name = "Cactus"
+ww.Parent = TutorialScrollingFrame
+ww.BackgroundColor3 = Color3.new(75, 75, 0)
+ww.Position = UDim2.new(0, 0, 0.1493650821, 0)
+ww.Size = UDim2.new(0, 66, 0, 19)
+ww.Font = Enum.Font.SourceSans
+ww.Text = "Infinite mana"
+ww.TextColor3 = Color3.new(0, 0, 0)
+ww.TextScaled = true
+ww.TextSize = 14
+ww.TextWrapped = true
+ww.MouseButton1Click:connect(function()
+while wait(0.2) do
+game.Players.LocalPlayer.Character.Humanoid.Values.Mana.Value = 100
+end
+end)
+
+ee.Name = "Shield"
+ee.Parent = TutorialScrollingFrame
+ee.BackgroundColor3 = Color3.new(75, 75, 0)
+ee.Position = UDim2.new(0, 0, 0.2093650821, 0)
+ee.Size = UDim2.new(0, 66, 0, 19)
+ee.Font = Enum.Font.SourceSans
+ee.Text = "Auto Shield"
+ee.TextColor3 = Color3.new(0, 0, 0)
+ee.TextScaled = true
+ee.TextSize = 14
+ee.TextWrapped = true
+ee.MouseButton1Click:connect(function()
+    game.ReplicatedStorage.Events.Action:FireServer("ShieldUp", 100)
+end)
+
+
+
+
+
+we.Name = "Shield"
+we.Parent = TutorialScrollingFrame
+we.BackgroundColor3 = Color3.new(75, 75, 0)
+we.Position = UDim2.new(0, 0, 0.2793650821, 0)
+we.Size = UDim2.new(0, 66, 0, 19)
+we.Font = Enum.Font.SourceSans
+we.Text = "FullBright"
+we.TextColor3 = Color3.new(0, 0, 0)
+we.TextScaled = true
+we.TextSize = 14
+we.TextWrapped = true
+we.MouseButton1Click:connect(function()
+game.Lighting.GlobalShadows = false
+end)
+
+
+ss.Name = "Shield"
+ss.Parent = TutorialScrollingFrame
+ss.BackgroundColor3 = Color3.new(75, 75, 0)
+ss.Position = UDim2.new(0, 0, 0.3493650821, 0)
+ss.Size = UDim2.new(0, 66, 0, 19)
+ss.Font = Enum.Font.SourceSans
+ss.Text = "AntiTimer"
+ss.TextColor3 = Color3.new(0, 0, 0)
+ss.TextScaled = true
+ss.TextSize = 14
+ss.TextWrapped = true
+ss.MouseButton1Click:connect(function()
+while wait(1) do
+game.Players.LocalPlayer.PlayerGui.Client.Frame.Seconds.Value = 120
+end
+end)
+
+wew.Name = "NoKILLY"
+wew.Parent = TutorialScrollingFrame
+wew.BackgroundColor3 = Color3.new(75, 75, 0)
+wew.Position = UDim2.new(0, 0, 0.4393650821, 0)
+wew.Size = UDim2.new(0, 66, 0, 19)
+wew.Font = Enum.Font.SourceSans
+wew.Text = "NOKILLBRICKS"
+wew.TextColor3 = Color3.new(0, 0, 0)
+wew.TextScaled = true
+wew.TextSize = 14
+wew.TextWrapped = true
+wew.MouseButton1Click:connect(function()
+for _,object in next, game.Workspace.Objects.Map:GetDescendants() do
+    if object.Name == "Magma"then
+        object.TouchInterest:Destroy()
+    end
+    end
+end)
+
+
+wrw.Name = "NoKILLY"
+wrw.Parent = TutorialScrollingFrame
+wrw.BackgroundColor3 = Color3.new(75, 75, 0)
+wrw.Position = UDim2.new(0, 0, 0.5393650821, 0)
+wrw.Size = UDim2.new(0, 66, 0, 19)
+wrw.Font = Enum.Font.SourceSans
+wrw.Text = "Fly"
+wrw.TextColor3 = Color3.new(0, 0, 0)
+wrw.TextScaled = true
+wrw.TextSize = 14
+wrw.TextWrapped = true
+wrw.MouseButton1Click:connect(function()
+ repeat wait()
+   until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+local mouse = game.Players.LocalPlayer:GetMouse()
+repeat wait() until mouse
+local plr = game.Players.LocalPlayer
+local torso = plr.Character.HumanoidRootPart
+local flying = true
+local deb = true
+local ctrl = {f = 0, b = 0, l = 0, r = 0}
+local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+local maxspeed = 50
+local speed = 0
+
+function Fly()
+local bv = Instance.new("BodyVelocity", torso)
+bv.velocity = Vector3.new(0,0.1,0)
+bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+repeat wait()
+if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+speed = speed+10+(speed/maxspeed)
+if speed > maxspeed then
+speed = maxspeed
+end
+elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+speed = speed-10
+if speed < 0 then
+speed = 0
+end
+end
+if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+else
+bv.velocity = Vector3.new(0,0.1,0)
+end
+until not flying
+ctrl = {f = 0, b = 0, l = 0, r = 0}
+lastctrl = {f = 0, b = 0, l = 0, r = 0}
+speed = 0
+bg:Destroy()
+bv:Destroy()
+plr.Character.Humanoid.PlatformStand = false
+end
+mouse.KeyDown:connect(function(key)
+if key:lower() == "e" then
+if flying then flying = false
+else
+flying = true
+Fly()
+end
+elseif key:lower() == "w" then
+ctrl.f = 1
+elseif key:lower() == "s" then
+ctrl.b = -1
+elseif key:lower() == "a" then
+ctrl.l = -1
+elseif key:lower() == "d" then
+ctrl.r = 1
+end
+end)
+mouse.KeyUp:connect(function(key)
+if key:lower() == "w" then
+ctrl.f = 0
+elseif key:lower() == "s" then
+ctrl.b = 0
+elseif key:lower() == "a" then
+ctrl.l = 0
+elseif key:lower() == "d" then
+ctrl.r = 0
+end
+end)
+Fly()
+end)
+
+
+Wi.Name = "NameHider"
+Wi.Parent = TutorialScrollingFrame
+Wi.BackgroundColor3 = Color3.new(75, 75, 0)
+Wi.Position = UDim2.new(0, 0, 0.5893650821, 0)
+Wi.Size = UDim2.new(0, 66, 0, 19)
+Wi.Font = Enum.Font.SourceSans
+Wi.Text = "Hide Identity"
+Wi.TextColor3 = Color3.new(0, 0, 0)
+Wi.TextScaled = true
+Wi.TextSize = 14
+Wi.TextWrapped = true
+Wi.MouseButton1Click:connect(function()
+ local plr = game.Players.LocalPlayer
+for _,object in next, plr.Character:GetDescendants() do
+    if object:IsA("Accessory") then
+        object:Destroy()
+    end
+end
+for _,objectz in next, plr.Character:GetDescendants() do
+    if objectz:IsA("CharacterMesh") then
+        objectz:Destroy()
+    end
+end
+game.Players.LocalPlayer.Character.Head:WaitForChild("Overhead"):Destroy()
+game.Players.LocalPlayer.Character:WaitForChild("Shirt"):Destroy()
+game.Players.LocalPlayer.Character:WaitForChild("Pants"):Destroy()
+game.Players.LocalPlayer.Character:WaitForChild("Shirt"):Destroy()
+game.Players.LocalPlayer.Character:WaitForChild("Pants"):Destroy()
+game.Players.LocalPlayer.Character.Head:WaitForChild("Mesh"):Destroy()
+end)
+
+
