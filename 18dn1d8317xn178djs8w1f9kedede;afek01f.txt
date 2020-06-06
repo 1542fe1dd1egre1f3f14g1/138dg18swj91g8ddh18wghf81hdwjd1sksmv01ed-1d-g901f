@@ -329,3 +329,31 @@ game.Players.LocalPlayer.Character:WaitForChild("Shirt"):Destroy()
 game.Players.LocalPlayer.Character:WaitForChild("Pants"):Destroy()
 game.Players.LocalPlayer.Character.Head:WaitForChild("Mesh"):Destroy()
 end)
+
+pe.Name = "beaner"
+pe.Parent = TutorialScrollingFrame
+pe.BackgroundColor3 = Color3.new(75, 75, 0)
+pe.Position = UDim2.new(0, 0, 0.9, 0)
+pe.Size = UDim2.new(0, 66, 0, 19)
+pe.Font = Enum.Font.SourceSans
+pe.Text = "PlaceHolder1"
+pe.TextColor3 = Color3.new(0, 0, 0)
+pe.TextScaled = true
+pe.TextSize = 14
+pe.TextWrapped = true
+pe.MouseButton1Click:connect(function()
+end)
+
+bg.Name = "tacomuncher"
+bg.Parent = TutorialScrollingFrame
+bg.BackgroundColor3 = Color3.new(75, 75, 0)
+bg.Position = UDim2.new(0, 0, 1, 0)
+bg.Size = UDim2.new(0, 66, 0, 19)
+bg.Font = Enum.Font.SourceSans
+bg.Text = "PlaceHolder2"
+bg.TextColor3 = Color3.new(0, 0, 0)
+bg.TextScaled = true
+bg.TextSize = 14
+bg.TextWrapped = true
+bg.MouseButton1Click:connect(function()
+end)
