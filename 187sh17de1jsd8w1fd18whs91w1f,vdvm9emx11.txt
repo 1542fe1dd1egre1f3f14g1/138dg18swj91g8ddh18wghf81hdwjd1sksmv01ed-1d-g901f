@@ -31,7 +31,7 @@ TutorialFrame.Active = true
 TutorialFrame.BackgroundColor3 = Color3.new(0, 0, 0)
 TutorialFrame.BackgroundTransparency = 0.3
 TutorialFrame.Position = UDim2.new(0.733261347, 0, 0.332283467, 0)
-TutorialFrame.Size = UDim2.new(0, 228, 0, 145)
+TutorialFrame.Size = UDim2.new(0, 228, 0, 200)
 TutorialFrame.Draggable = true
 
 SecondTutorialFrame.Name = "SecondTutorialFrame"
@@ -39,14 +39,14 @@ SecondTutorialFrame.Parent = TutorialFrame
 SecondTutorialFrame.BackgroundColor3 = Color3.new(0, 0, 0)
 SecondTutorialFrame.BackgroundTransparency = 0.2
 SecondTutorialFrame.Position = UDim2.new(0.0350877196, 0, 0.0655172393, 0)
-SecondTutorialFrame.Size = UDim2.new(0, 88, 0, 126)
+SecondTutorialFrame.Size = UDim2.new(0, 88, 0, 175)
 
 PlayerName.Name = "PlayerName"
 PlayerName.Parent = SecondTutorialFrame
 PlayerName.BackgroundColor3 = Color3.new(75, 75, 0)
 PlayerName.BackgroundTransparency = 1
 PlayerName.Position = UDim2.new(0.125, 0, 0.753968298, 0)
-PlayerName.Size = UDim2.new(0, 66, 0, 18)
+PlayerName.Size = UDim2.new(0, 75, 0, 18)
 PlayerName.Font = Enum.Font.SourceSans
 PlayerName.Text = "Wheatage"
 PlayerName.TextColor3 = Color3.new(75, 75, 0)
@@ -82,7 +82,7 @@ TutorialScrollingFrame.Parent = TutorialFrame
 TutorialScrollingFrame.BackgroundColor3 = Color3.new(0, 0, 0)
 TutorialScrollingFrame.BackgroundTransparency = 0.2
 TutorialScrollingFrame.Position = UDim2.new(0.504385948, 0, 0.068965517, 0)
-TutorialScrollingFrame.Size = UDim2.new(0, 101, 0, 126)
+TutorialScrollingFrame.Size = UDim2.new(0, 101, 0, 175)
 
 Forcefield.Name = "Flower"
 Forcefield.Parent = TutorialScrollingFrame
@@ -109,7 +109,7 @@ end)
 God.Name = "Cata"
 God.Parent = TutorialScrollingFrame
 God.BackgroundColor3 = Color3.new(75, 75, 0)
-God.Position = UDim2.new(0, 0, 0.1, 0)
+God.Position = UDim2.new(0, 0, 0.06, 0)
 God.Size = UDim2.new(0, 66, 0, 19)
 God.Font = Enum.Font.SourceSans
 God.Text = "Speed"
@@ -126,7 +126,7 @@ end)
 ww.Name = "Cactus"
 ww.Parent = TutorialScrollingFrame
 ww.BackgroundColor3 = Color3.new(75, 75, 0)
-ww.Position = UDim2.new(0, 0, 0.2, 0)
+ww.Position = UDim2.new(0, 0, 0.12, 0)
 ww.Size = UDim2.new(0, 66, 0, 19)
 ww.Font = Enum.Font.SourceSans
 ww.Text = "Infinite mana"
@@ -143,7 +143,7 @@ end)
 ee.Name = "Shield"
 ee.Parent = TutorialScrollingFrame
 ee.BackgroundColor3 = Color3.new(75, 75, 0)
-ee.Position = UDim2.new(0, 0, 0.3, 0)
+ee.Position = UDim2.new(0, 0, 0.18, 0)
 ee.Size = UDim2.new(0, 66, 0, 19)
 ee.Font = Enum.Font.SourceSans
 ee.Text = "Auto Shield"
@@ -162,7 +162,7 @@ end)
 we.Name = "Shield"
 we.Parent = TutorialScrollingFrame
 we.BackgroundColor3 = Color3.new(75, 75, 0)
-we.Position = UDim2.new(0, 0, 0.4, 0)
+we.Position = UDim2.new(0, 0, 0.24, 0)
 we.Size = UDim2.new(0, 66, 0, 19)
 we.Font = Enum.Font.SourceSans
 we.Text = "FullBright"
@@ -178,7 +178,7 @@ end)
 ss.Name = "Shield"
 ss.Parent = TutorialScrollingFrame
 ss.BackgroundColor3 = Color3.new(75, 75, 0)
-ss.Position = UDim2.new(0, 0, 0.5, 0)
+ss.Position = UDim2.new(0, 0, 0.30, 0)
 ss.Size = UDim2.new(0, 66, 0, 19)
 ss.Font = Enum.Font.SourceSans
 ss.Text = "AntiTimer"
@@ -195,7 +195,7 @@ end)
 wew.Name = "NoKILLY"
 wew.Parent = TutorialScrollingFrame
 wew.BackgroundColor3 = Color3.new(75, 75, 0)
-wew.Position = UDim2.new(0, 0, 0.6, 0)
+wew.Position = UDim2.new(0, 0, 0.36, 0)
 wew.Size = UDim2.new(0, 66, 0, 19)
 wew.Font = Enum.Font.SourceSans
 wew.Text = "NOKILLBRICKS"
@@ -215,7 +215,7 @@ end)
 wrw.Name = "NoKILLY"
 wrw.Parent = TutorialScrollingFrame
 wrw.BackgroundColor3 = Color3.new(75, 75, 0)
-wrw.Position = UDim2.new(0, 0, 0.7, 0)
+wrw.Position = UDim2.new(0, 0, 0.42, 0)
 wrw.Size = UDim2.new(0, 66, 0, 19)
 wrw.Font = Enum.Font.SourceSans
 wrw.Text = "Fly"
@@ -303,7 +303,7 @@ end)
 pe.Name = "beaner"
 pe.Parent = TutorialScrollingFrame
 pe.BackgroundColor3 = Color3.new(75, 75, 0)
-pe.Position = UDim2.new(0, 0, 0.8, 0)
+pe.Position = UDim2.new(0, 0, 0.48, 0)
 pe.Size = UDim2.new(0, 66, 0, 19)
 pe.Font = Enum.Font.SourceSans
 pe.Text = "PlaceHolder1"
@@ -317,7 +317,7 @@ end)
 bg.Name = "tacomuncher"
 bg.Parent = TutorialScrollingFrame
 bg.BackgroundColor3 = Color3.new(75, 75, 0)
-bg.Position = UDim2.new(0, 0, 0.9, 0)
+bg.Position = UDim2.new(0, 0, 0.54, 0)
 bg.Size = UDim2.new(0, 66, 0, 19)
 bg.Font = Enum.Font.SourceSans
 bg.Text = "PlaceHolder2"
