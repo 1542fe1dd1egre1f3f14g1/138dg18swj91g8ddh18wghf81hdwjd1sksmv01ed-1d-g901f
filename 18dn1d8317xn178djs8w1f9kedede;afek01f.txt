@@ -1,3 +1,4 @@
+  
 -- Objects
 
 local TutorialGUI = Instance.new("ScreenGui")
@@ -17,6 +18,7 @@ local wew = Instance.new("TextButton")
 local wrw = Instance.new("TextButton")
 local wheat = Instance.new("ImageLabel")
 local Wi = Instance.new("TextButton")
+local nc = Instance.new("TextButton")
 -- Properties
 TutorialGUI.Name = "TutorialGUI"
 TutorialGUI.Parent = game.CoreGui
@@ -105,7 +107,7 @@ end)
 God.Name = "Cata"
 God.Parent = TutorialScrollingFrame
 God.BackgroundColor3 = Color3.new(75, 75, 0)
-God.Position = UDim2.new(0, 0, 0.0793650821, 0)
+God.Position = UDim2.new(0, 0, 0.1, 0)
 God.Size = UDim2.new(0, 66, 0, 19)
 God.Font = Enum.Font.SourceSans
 God.Text = "Speed"
@@ -122,7 +124,7 @@ end)
 ww.Name = "Cactus"
 ww.Parent = TutorialScrollingFrame
 ww.BackgroundColor3 = Color3.new(75, 75, 0)
-ww.Position = UDim2.new(0, 0, 0.1493650821, 0)
+ww.Position = UDim2.new(0, 0, 0.2, 0)
 ww.Size = UDim2.new(0, 66, 0, 19)
 ww.Font = Enum.Font.SourceSans
 ww.Text = "Infinite mana"
@@ -139,7 +141,7 @@ end)
 ee.Name = "Shield"
 ee.Parent = TutorialScrollingFrame
 ee.BackgroundColor3 = Color3.new(75, 75, 0)
-ee.Position = UDim2.new(0, 0, 0.2093650821, 0)
+ee.Position = UDim2.new(0, 0, 0.3, 0)
 ee.Size = UDim2.new(0, 66, 0, 19)
 ee.Font = Enum.Font.SourceSans
 ee.Text = "Auto Shield"
@@ -158,7 +160,7 @@ end)
 we.Name = "Shield"
 we.Parent = TutorialScrollingFrame
 we.BackgroundColor3 = Color3.new(75, 75, 0)
-we.Position = UDim2.new(0, 0, 0.2793650821, 0)
+we.Position = UDim2.new(0, 0, 0.4, 0)
 we.Size = UDim2.new(0, 66, 0, 19)
 we.Font = Enum.Font.SourceSans
 we.Text = "FullBright"
@@ -174,7 +176,7 @@ end)
 ss.Name = "Shield"
 ss.Parent = TutorialScrollingFrame
 ss.BackgroundColor3 = Color3.new(75, 75, 0)
-ss.Position = UDim2.new(0, 0, 0.3493650821, 0)
+ss.Position = UDim2.new(0, 0, 0.5, 0)
 ss.Size = UDim2.new(0, 66, 0, 19)
 ss.Font = Enum.Font.SourceSans
 ss.Text = "AntiTimer"
@@ -191,7 +193,7 @@ end)
 wew.Name = "NoKILLY"
 wew.Parent = TutorialScrollingFrame
 wew.BackgroundColor3 = Color3.new(75, 75, 0)
-wew.Position = UDim2.new(0, 0, 0.4393650821, 0)
+wew.Position = UDim2.new(0, 0, 0.6, 0)
 wew.Size = UDim2.new(0, 66, 0, 19)
 wew.Font = Enum.Font.SourceSans
 wew.Text = "NOKILLBRICKS"
@@ -211,7 +213,7 @@ end)
 wrw.Name = "NoKILLY"
 wrw.Parent = TutorialScrollingFrame
 wrw.BackgroundColor3 = Color3.new(75, 75, 0)
-wrw.Position = UDim2.new(0, 0, 0.5393650821, 0)
+wrw.Position = UDim2.new(0, 0, 0.7, 0)
 wrw.Size = UDim2.new(0, 66, 0, 19)
 wrw.Font = Enum.Font.SourceSans
 wrw.Text = "Fly"
@@ -300,7 +302,7 @@ end)
 Wi.Name = "NameHider"
 Wi.Parent = TutorialScrollingFrame
 Wi.BackgroundColor3 = Color3.new(75, 75, 0)
-Wi.Position = UDim2.new(0, 0, 0.5893650821, 0)
+Wi.Position = UDim2.new(0, 0, 0.8, 0)
 Wi.Size = UDim2.new(0, 66, 0, 19)
 Wi.Font = Enum.Font.SourceSans
 Wi.Text = "Hide Identity"
@@ -327,5 +329,3 @@ game.Players.LocalPlayer.Character:WaitForChild("Shirt"):Destroy()
 game.Players.LocalPlayer.Character:WaitForChild("Pants"):Destroy()
 game.Players.LocalPlayer.Character.Head:WaitForChild("Mesh"):Destroy()
 end)
-
-
