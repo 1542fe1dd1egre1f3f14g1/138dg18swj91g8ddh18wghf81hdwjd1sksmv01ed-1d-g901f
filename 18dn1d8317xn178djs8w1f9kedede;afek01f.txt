@@ -359,12 +359,17 @@ bg.BackgroundColor3 = Color3.new(75, 75, 0)
 bg.Position = UDim2.new(0, 0, 0.6, 0)
 bg.Size = UDim2.new(0, 66, 0, 19)
 bg.Font = Enum.Font.SourceSans
-bg.Text = "PlaceHolder2"
+bg.Text = "Noclip ON"
 bg.TextColor3 = Color3.new(0, 0, 0)
 bg.TextScaled = true
 bg.TextSize = 14
 bg.TextWrapped = true
 bg.MouseButton1Click:connect(function()
+for _, child in pairs(game.Workspace.Objects:GetDescendants()) do
+                if child:IsA("Part") and child.CanCollide == false then
+                       child.CanCollide = true
+end
+end
 end)
 
 qz.Name = "burrito"
@@ -373,12 +378,17 @@ qz.BackgroundColor3 = Color3.new(75, 75, 0)
 qz.Position = UDim2.new(0, 0, 0.66, 0)
 qz.Size = UDim2.new(0, 66, 0, 19)
 qz.Font = Enum.Font.SourceSans
-qz.Text = "PlaceHolder3"
+qz.Text = "Noclip OFF"
 qz.TextColor3 = Color3.new(0, 0, 0)
 qz.TextScaled = true
 qz.TextSize = 14
 qz.TextWrapped = true
 qz.MouseButton1Click:connect(function()
+for _, child in pairs(game.Workspace.Objects:GetDescendants()) do
+                if child:IsA("Part") and child.CanCollide == true then
+                       child.CanCollide = false
+end
+end
 end)
 
 zx.Name = "gaynigg"
