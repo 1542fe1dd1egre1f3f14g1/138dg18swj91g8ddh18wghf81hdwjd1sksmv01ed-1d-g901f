@@ -308,12 +308,17 @@ pe.BackgroundColor3 = Color3.new(75, 75, 0)
 pe.Position = UDim2.new(0, 0, 0.48, 0)
 pe.Size = UDim2.new(0, 66, 0, 19)
 pe.Font = Enum.Font.SourceSans
-pe.Text = "PlaceHolder1"
+pe.Text = "Noclip Bypass"
 pe.TextColor3 = Color3.new(0, 0, 0)
 pe.TextScaled = true
 pe.TextSize = 14
 pe.TextWrapped = true
 pe.MouseButton1Click:connect(function()
+for _,objectz in next, game.Workspace.Objects.Effects.Collision:GetDescendants() do
+    if objectz:IsA("Part")  then
+        objectz.TouchInterest:Destroy()
+    end
+end
 end)
 
 bg.Name = "tacomuncher"
