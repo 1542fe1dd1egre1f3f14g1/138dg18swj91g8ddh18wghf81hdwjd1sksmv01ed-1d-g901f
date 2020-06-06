@@ -19,6 +19,8 @@ local wrw = Instance.new("TextButton")
 local wheat = Instance.new("ImageLabel")
 local Wi = Instance.new("TextButton")
 local nc = Instance.new("TextButton")
+local pe = Instance.new("TextButton")
+local bg = Instance.new("TextButton")
 -- Properties
 TutorialGUI.Name = "TutorialGUI"
 TutorialGUI.Parent = game.CoreGui
