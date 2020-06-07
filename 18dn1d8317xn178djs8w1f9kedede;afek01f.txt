@@ -23,6 +23,8 @@ local pe = Instance.new("TextButton")
 local bg = Instance.new("TextButton")
 local qz = Instance.new("TextButton")
 local zx = Instance.new("TextButton")
+local bf = Instance.new("TextButton")
+local cg = Instance.new("TextButton")
 -- Properties
 TutorialGUI.Name = "TutorialGUI"
 TutorialGUI.Parent = game.CoreGui
