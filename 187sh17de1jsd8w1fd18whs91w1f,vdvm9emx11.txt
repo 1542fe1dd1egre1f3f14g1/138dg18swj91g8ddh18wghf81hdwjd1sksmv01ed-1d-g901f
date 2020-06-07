@@ -25,6 +25,7 @@ local qz = Instance.new("TextButton")
 local zx = Instance.new("TextButton")
 local cg = Instance.new("TextButton")
 local bf = Instance.new("TextButton")
+local bh = Instance.new("TextButton")
 -- Properties
 TutorialGUI.Name = "TutorialGUI"
 TutorialGUI.Parent = game.CoreGui
@@ -49,7 +50,7 @@ PlayerName.Name = "PlayerName"
 PlayerName.Parent = SecondTutorialFrame
 PlayerName.BackgroundColor3 = Color3.new(75, 75, 0)
 PlayerName.BackgroundTransparency = 1
-PlayerName.Position = UDim2.new(0.125, 0, 0.753968298, 0)
+PlayerName.Position = UDim2.new(0.075, 0, 0.8, 0)
 PlayerName.Size = UDim2.new(0, 75, 0, 18)
 PlayerName.Font = Enum.Font.SourceSans
 PlayerName.Text = "Wheatage"
@@ -62,7 +63,7 @@ Credits.Name = "Wheatage"
 Credits.Parent = SecondTutorialFrame
 Credits.BackgroundColor3 = Color3.new(75, 75, 0)
 Credits.BackgroundTransparency = 1
-Credits.Position = UDim2.new(0.18, 0, 0.301587313, 0)
+Credits.Position = UDim2.new(0.18, 0, 0.43587313, 0)
 Credits.Size = UDim2.new(0, 56, 0, 50)
 Credits.Image = "http://www.roblox.com/asset/?id=5138151946"
 
@@ -79,6 +80,20 @@ Kill.TextSize = 14
 Kill.TextWrapped = true
 Kill.MouseButton1Click:connect(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Objects.Map.Teleporter.CFrame
+end)
+
+bh.Name = "bruh"
+bh.Parent = SecondTutorialFrame
+bh.BackgroundColor3 = Color3.new(75, 75, 0)
+bh.Position = UDim2.new(0.125, 0, 0.2033358, 0)
+bh.Size = UDim2.new(0, 66, 0, 18)
+bh.Font = Enum.Font.SourceSans
+bh.Text = "LootRoom"
+bh.TextColor3 = Color3.new(0, 0, 0)
+bh.TextScaled = true
+bh.TextSize = 14
+bh.TextWrapped = true
+bh.MouseButton1Click:connect(function()
 end)
 
 TutorialScrollingFrame.Name = "TutorialScrollingFrame"
