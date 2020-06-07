@@ -70,7 +70,7 @@ Credits.Image = "http://www.roblox.com/asset/?id=5138151946"
 Kill.Name = "Cat"
 Kill.Parent = SecondTutorialFrame
 Kill.BackgroundColor3 = Color3.new(75, 75, 0)
-Kill.Position = UDim2.new(0.125, 0, 0.0833333358, 0)
+Kill.Position = UDim2.new(0.125, 0, 0.07, 0)
 Kill.Size = UDim2.new(0, 66, 0, 18)
 Kill.Font = Enum.Font.SourceSans
 Kill.Text = "LootRoom"
@@ -85,7 +85,7 @@ end)
 bh.Name = "bruh"
 bh.Parent = SecondTutorialFrame
 bh.BackgroundColor3 = Color3.new(75, 75, 0)
-bh.Position = UDim2.new(0.125, 0, 0.2033358, 0)
+bh.Position = UDim2.new(0.125, 0, 0.2, 0)
 bh.Size = UDim2.new(0, 66, 0, 18)
 bh.Font = Enum.Font.SourceSans
 bh.Text = "LootRoom"
