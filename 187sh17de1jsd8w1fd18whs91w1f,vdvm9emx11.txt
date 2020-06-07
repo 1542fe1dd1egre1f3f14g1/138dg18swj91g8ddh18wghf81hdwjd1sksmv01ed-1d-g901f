@@ -23,6 +23,8 @@ local pe = Instance.new("TextButton")
 local bg = Instance.new("TextButton")
 local qz = Instance.new("TextButton")
 local zx = Instance.new("TextButton")
+local cg = Instance.new("TextButton")
+local bf = Instance.new("TextButton")
 -- Properties
 TutorialGUI.Name = "TutorialGUI"
 TutorialGUI.Parent = game.CoreGui
@@ -372,4 +374,32 @@ zx.TextSize = 14
 zx.TextWrapped = true
 zx.MouseButton1Click:connect(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.BodyVelocity:Destroy()
+end)
+
+cg.Name = "gayniggea"
+cg.Parent = TutorialScrollingFrame
+cg.BackgroundColor3 = Color3.new(75, 75, 0)
+cg.Position = UDim2.new(0, 0, 0.72, 0)
+cg.Size = UDim2.new(0, 66, 0, 19)
+cg.Font = Enum.Font.SourceSans
+cg.Text = "PlaceHolder"
+cg.TextColor3 = Color3.new(0, 0, 0)
+cg.TextScaled = true
+cg.TextSize = 14
+cg.TextWrapped = true
+cg.MouseButton1Click:connect(function()
+end)
+
+bf.Name = "gayniggr"
+bf.Parent = TutorialScrollingFrame
+bf.BackgroundColor3 = Color3.new(75, 75, 0)
+bf.Position = UDim2.new(0, 0, 0.80, 0)
+bf.Size = UDim2.new(0, 66, 0, 19)
+bf.Font = Enum.Font.SourceSans
+bf.Text = "PlaceHolder"
+bf.TextColor3 = Color3.new(0, 0, 0)
+bf.TextScaled = true
+bf.TextSize = 14
+bf.TextWrapped = true
+bf.MouseButton1Click:connect(function()
 end)
