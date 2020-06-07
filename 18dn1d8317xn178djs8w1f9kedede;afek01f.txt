@@ -411,7 +411,7 @@ end)
 cg.Name = "gayniggea"
 cg.Parent = TutorialScrollingFrame
 cg.BackgroundColor3 = Color3.new(75, 75, 0)
-cg.Position = UDim2.new(0, 0, 0.80, 0)
+cg.Position = UDim2.new(0, 0, 0.78, 0)
 cg.Size = UDim2.new(0, 66, 0, 19)
 cg.Font = Enum.Font.SourceSans
 cg.Text = "PlaceHolder"
@@ -425,7 +425,7 @@ end)
 bf.Name = "gayniggr"
 bf.Parent = TutorialScrollingFrame
 bf.BackgroundColor3 = Color3.new(75, 75, 0)
-bf.Position = UDim2.new(0, 0, 0.86, 0)
+bf.Position = UDim2.new(0, 0, 0.84, 0)
 bf.Size = UDim2.new(0, 66, 0, 19)
 bf.Font = Enum.Font.SourceSans
 bf.Text = "PlaceHolder"
