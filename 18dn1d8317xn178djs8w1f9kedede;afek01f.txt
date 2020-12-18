@@ -114,7 +114,19 @@ Forcefield.TextScaled = true
 Forcefield.TextSize = 14
 Forcefield.TextWrapped = true
 Forcefield.MouseButton1Click:connect(function()
-
+local Click = click_detector or fireclickdetector
+local RUS = game:GetService("RunService")
+local range = 10
+local rate = 4
+while wait(0.1) do 
+for _,object in next, game:GetService("Workspace").Objects.Spawned:GetDescendants() do
+    if object:IsA("ClickDetector") then
+        if (object.Parent.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= range then
+         Click(object, 1)
+    end
+end
+end
+end
 end)
 
 God.Name = "Cata"
