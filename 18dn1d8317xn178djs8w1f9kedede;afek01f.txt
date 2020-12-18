@@ -266,7 +266,7 @@ local speed = 0
 
 function Fly()
 local bv = Instance.new("BodyVelocity", torso)
-bv.velocity = Vector3.new(0,0.1,0)
+bv.velocity = Vector3.new(0,0.000000001,0)
 bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
 repeat wait()
 if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
@@ -286,7 +286,7 @@ lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
 elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
 bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
 else
-bv.velocity = Vector3.new(0,0.1,0)
+bv.velocity = Vector3.new(0,0.000000001,0)
 end
 until not flying
 ctrl = {f = 0, b = 0, l = 0, r = 0}
