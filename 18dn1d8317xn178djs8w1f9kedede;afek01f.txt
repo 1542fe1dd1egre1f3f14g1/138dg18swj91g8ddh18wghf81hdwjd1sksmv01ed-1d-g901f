@@ -393,7 +393,7 @@ end)
 plr = game.Players.LocalPlayer
 mouse = plr:GetMouse()
 mouse.KeyDown:connect(function(key)
-if key == "r" then -- key
+if key == "x" then -- key
 Moodyblues = not Moodyblues -- GET OUT OF THERE KING CRIMSON IS BEHIND YOU!
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11) -- literally moody blues
 end
