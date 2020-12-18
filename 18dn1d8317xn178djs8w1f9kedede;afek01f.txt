@@ -108,21 +108,13 @@ Forcefield.Parent = TutorialScrollingFrame
 Forcefield.BackgroundColor3 = Color3.new(75, 75, 0)
 Forcefield.Size = UDim2.new(0, 66, 0, 19)
 Forcefield.Font = Enum.Font.SourceSans
-Forcefield.Text = "AutoPickup"
+Forcefield.Text = "Auto-Pickup"
 Forcefield.TextColor3 = Color3.new(0, 0, 0)
 Forcefield.TextScaled = true
 Forcefield.TextSize = 14
 Forcefield.TextWrapped = true
 Forcefield.MouseButton1Click:connect(function()
- local plr = game.Players.LocalPlayer
-local Click = clickdetector or fireclickdetector
-while wait(0.5) do
-for _,object in next, game.Workspace.Objects.Spawned:GetDescendants() do
-    if object:IsA("ClickDetector") then
-         Click(object, 1)
-    end
-end
-end
+
 end)
 
 God.Name = "Cata"
@@ -148,15 +140,31 @@ ww.BackgroundColor3 = Color3.new(75, 75, 0)
 ww.Position = UDim2.new(0, 0, 0.12, 0)
 ww.Size = UDim2.new(0, 66, 0, 19)
 ww.Font = Enum.Font.SourceSans
-ww.Text = "Infinite mana"
+ww.Text = "Infinite mana (R)"
 ww.TextColor3 = Color3.new(0, 0, 0)
 ww.TextScaled = true
 ww.TextSize = 14
 ww.TextWrapped = true
 ww.MouseButton1Click:connect(function()
-while wait(0.2) do
-game.Players.LocalPlayer.Character.Humanoid.Values.Mana.Value = 100
+repeat wait()
+until game.Players.LocalPlayer and game.Players.LocalPlayer.Character
+function allahbombe()
+nomorebigmana = true
+repeat wait()
+        game.Players.LocalPlayer.Character.Humanoid.Values.Mana.Value = 100
+        until nomorebigmana == false
 end
+local plre = game.Players.LocalPlayer
+local mouse = plre:GetMouse()
+mouse.KeyDown:connect(function(k)
+if k:lower() == "r" then
+if nomorebigmana then nomorebigmana = false
+else
+nomorebigmana = true
+            allahbombe()
+        end
+    end
+end)
 end)
 
 ee.Name = "Shield"
@@ -237,7 +245,7 @@ wrw.BackgroundColor3 = Color3.new(75, 75, 0)
 wrw.Position = UDim2.new(0, 0, 0.42, 0)
 wrw.Size = UDim2.new(0, 66, 0, 19)
 wrw.Font = Enum.Font.SourceSans
-wrw.Text = "Fly"
+wrw.Text = "Fly (E)"
 wrw.TextColor3 = Color3.new(0, 0, 0)
 wrw.TextScaled = true
 wrw.TextSize = 14
@@ -326,29 +334,12 @@ Wi.BackgroundColor3 = Color3.new(75, 75, 0)
 Wi.Position = UDim2.new(0, 0, 0.48, 0)
 Wi.Size = UDim2.new(0, 66, 0, 19)
 Wi.Font = Enum.Font.SourceSans
-Wi.Text = "Hide Identity"
+Wi.Text = "PlaceHolder"
 Wi.TextColor3 = Color3.new(0, 0, 0)
 Wi.TextScaled = true
 Wi.TextSize = 14
 Wi.TextWrapped = true
 Wi.MouseButton1Click:connect(function()
- local plr = game.Players.LocalPlayer
-for _,object in next, plr.Character:GetDescendants() do
-    if object:IsA("Accessory") then
-        object:Destroy()
-    end
-end
-for _,objectz in next, plr.Character:GetDescendants() do
-    if objectz:IsA("CharacterMesh") then
-        objectz:Destroy()
-    end
-end
-game.Players.LocalPlayer.Character.Head:WaitForChild("Overhead"):Destroy()
-game.Players.LocalPlayer.Character:WaitForChild("Shirt"):Destroy()
-game.Players.LocalPlayer.Character:WaitForChild("Pants"):Destroy()
-game.Players.LocalPlayer.Character:WaitForChild("Shirt"):Destroy()
-game.Players.LocalPlayer.Character:WaitForChild("Pants"):Destroy()
-game.Players.LocalPlayer.Character.Head:WaitForChild("Mesh"):Destroy()
 end)
 
 pe.Name = "beaner"
@@ -376,17 +367,26 @@ bg.BackgroundColor3 = Color3.new(75, 75, 0)
 bg.Position = UDim2.new(0, 0, 0.6, 0)
 bg.Size = UDim2.new(0, 66, 0, 19)
 bg.Font = Enum.Font.SourceSans
-bg.Text = "Noclip OFF"
+bg.Text = "Noclip"
 bg.TextColor3 = Color3.new(0, 0, 0)
 bg.TextScaled = true
 bg.TextSize = 14
 bg.TextWrapped = true
 bg.MouseButton1Click:connect(function()
-for _, child in pairs(game.Workspace.Objects:GetDescendants()) do
-                if child:IsA("Part") and child.CanCollide == false then
-                       child.CanCollide = true
+Moodyblues = false -- bool bablue
+game:GetService('RunService').Stepped:connect(function()
+if Moodyblues then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11) -- humanoid shit that makes noclip happebn like big mana guy
 end
+end)
+plr = game.Players.LocalPlayer
+mouse = plr:GetMouse()
+mouse.KeyDown:connect(function(key)
+if key == "r" then -- key
+Moodyblues = not Moodyblues -- GET OUT OF THERE KING CRIMSON IS BEHIND YOU!
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11) -- literally moody blues
 end
+end)
 end)
 
 qz.Name = "burrito"
@@ -395,17 +395,12 @@ qz.BackgroundColor3 = Color3.new(75, 75, 0)
 qz.Position = UDim2.new(0, 0, 0.66, 0)
 qz.Size = UDim2.new(0, 66, 0, 19)
 qz.Font = Enum.Font.SourceSans
-qz.Text = "Noclip ON"
+qz.Text = "allahhhh mashallah"
 qz.TextColor3 = Color3.new(0, 0, 0)
 qz.TextScaled = true
 qz.TextSize = 14
 qz.TextWrapped = true
 qz.MouseButton1Click:connect(function()
-for _, child in pairs(game.Workspace.Objects:GetDescendants()) do
-                if child:IsA("Part") and child.CanCollide == true then
-                       child.CanCollide = false
-end
-end
 end)
 
 zx.Name = "gaynigg"
@@ -414,13 +409,12 @@ zx.BackgroundColor3 = Color3.new(75, 75, 0)
 zx.Position = UDim2.new(0, 0, 0.54, 0)
 zx.Size = UDim2.new(0, 66, 0, 19)
 zx.Font = Enum.Font.SourceSans
-zx.Text = "Fly OFF"
+zx.Text = "PlaceHolder"
 zx.TextColor3 = Color3.new(0, 0, 0)
 zx.TextScaled = true
 zx.TextSize = 14
 zx.TextWrapped = true
 zx.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.BodyVelocity:Destroy()
 end)
 
 cg.Name = "gayniggea"
