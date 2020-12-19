@@ -345,12 +345,17 @@ Wi.BackgroundColor3 = Color3.new(75, 75, 0)
 Wi.Position = UDim2.new(0, 0, 0.48, 0)
 Wi.Size = UDim2.new(0, 66, 0, 19)
 Wi.Font = Enum.Font.SourceSans
-Wi.Text = "PlaceHolder"
+Wi.Text = "Nc2 (no toggle)"
 Wi.TextColor3 = Color3.new(0, 0, 0)
 Wi.TextScaled = true
 Wi.TextSize = 14
 Wi.TextWrapped = true
 Wi.MouseButton1Click:connect(function()
+for _, child in pairs(game.Workspace.Objects:GetDescendants()) do
+                if child:IsA("Part") and child.CanCollide == true then
+                       child.CanCollide = false
+end
+end
 end)
 
 pe.Name = "beaner"
