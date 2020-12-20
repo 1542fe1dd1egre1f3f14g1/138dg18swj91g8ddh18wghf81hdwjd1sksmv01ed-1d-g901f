@@ -441,7 +441,7 @@ local flying = true
 local deb = true
 local ctrl = {f = 0, b = 0, l = 0, r = 0}
 local lastctrl = {f = 0, b = 0, l = 0, r = 0}
-local maxspeed = 300
+local maxspeed = 450
 local speed = 0
 
 function Fly()
