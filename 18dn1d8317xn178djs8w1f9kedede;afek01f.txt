@@ -445,7 +445,7 @@ local maxspeed = 300
 local speed = 0
 
 function Fly()
-local bv = Instance.new("BodyVelocity", torso)
+local hbv = Instance.new("BodyVelocity", torso)
 hbv.velocity = Vector3.new(0,0.000000001,0)
 hbv.maxForce = Vector3.new(9e9, 9e9, 9e9)
 repeat wait()
