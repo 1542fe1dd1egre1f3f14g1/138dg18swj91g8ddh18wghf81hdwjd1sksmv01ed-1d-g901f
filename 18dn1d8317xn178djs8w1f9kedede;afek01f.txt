@@ -505,7 +505,6 @@ end
 end)
 Fly()
 end)
-end)
 
 cg.Name = "gayniggea"
 cg.Parent = TutorialScrollingFrame
